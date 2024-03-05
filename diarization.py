@@ -1,8 +1,10 @@
 # Speaker Diarisation
 
-from pyAudioAnalysis import audioBasicIO
-from pyAudioAnalysis import ShortTermFeatures
-from pyAudioAnalysis import MidTermFeatures
+from pyAudioAnalysis import (
+    audioBasicIO,
+    MidTermFeatures,
+    ShortTermFeatures
+)
 from sklearn.cluster import KMeans
 import numpy as np
 
@@ -36,7 +38,7 @@ def speaker_diarization(filename, mid_window, mid_step, short_window, short_step
     return labels, segments
 
 # Parameters
-filename = 'example.wav'  # Path to the audio file
+filename = 'demo_session.mp3'  # Path to the audio file
 mid_window = 2.0  # Mid-term window size in seconds
 mid_step = 0.5  # Mid-term step size in seconds
 short_window = 0.05  # Short-term window size in seconds
