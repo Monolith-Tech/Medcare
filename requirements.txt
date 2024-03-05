@@ -1,2 +1,5 @@
 openai
 assemblyai
+pyAudioAnalysis
+scikit-learn
+numpy
