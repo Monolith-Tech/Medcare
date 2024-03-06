@@ -26,5 +26,10 @@ def is_authenticated(username, password):
     return False
 
 
-
+def process_audio(audio_filepath: str) -> str:
+    """
+    Converts audio -> Transcript -> Structured conversation -> SOAP
+    """
+    
+    
 

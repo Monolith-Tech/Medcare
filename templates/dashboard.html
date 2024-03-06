@@ -38,6 +38,11 @@
         <h1>Welcome to Your Dashboard</h1>
       </header>
 
+      {% with messages = get_flashed_messages(with_categories=true) %} {% if
+      messages %} {% for category, message in messages %}
+      <div class="flash-message {{ category }}">{{ message }}</div>
+      {% endfor %} {% endif %} {% endwith %}
+
       <section class="actions">
         <!-- Update the onclick attribute to redirect to /record_session -->
         <button

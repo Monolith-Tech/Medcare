@@ -1,6 +1,6 @@
 # Create transcriptions
 
-from utils import (
+from tools import (
     openai_client,
     get_openai_response,
     Models
