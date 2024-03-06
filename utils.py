@@ -7,24 +7,21 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # API_KEY setup
-client = openai.OpenAI()
+openai_client = openai.OpenAI()
 openai.api_key = os.environ["OPENAI_API_KEY"]
 
 # models
-model = "gpt-3.5-turbo"
-model_16k = "gpt-3.5-turbo-16k"
-model_4 = "gpt-4"
+class Models:
+    model_3 = "gpt-3.5-turbo"
+    model_3_turbo = "gpt-3.5-turbo-16k"
+    model_4 = "gpt-4"
+    model_4_turbo = "gpt-4-turbo-preview"
 
 # GPT chat completion
-def get_openai_response(prompt_content: str, model=model):
-    response = client.chat.completions.create(
-        model = "gpt-3.5-turbo",
-        messages = [
-            {
-                "role": "system",
-                "content": prompt_content
-            }
-        ],
+def get_openai_response(prompt, model=Models.model_3) -> str:
+    response = openai_client.chat.completions.create(
+        model = model,
+        messages = prompt,
         temperature = 0.3,
     )
 
