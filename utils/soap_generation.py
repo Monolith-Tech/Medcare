@@ -1,6 +1,6 @@
 # SOAP generation
 
-from utils import (
+from tools import (
     get_openai_response,
     Models
 )

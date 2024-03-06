@@ -5,7 +5,7 @@ import json
 
 # transcription prompt
 def conversation_prompt(transcription_input: str) -> str:
-    with open('prompts/conversation.json', 'r') as file:
+    with open('utils/prompts/conversation.json', 'r') as file:
         prompt = json.load(file)
         
     # Insert the input transcription into the last user role content
@@ -15,7 +15,7 @@ def conversation_prompt(transcription_input: str) -> str:
 
 # soap prompt
 def SOAP_prompt(conversation_input: str) -> str:
-    with open('prompts/SOAP.json', 'r') as file:
+    with open('utils/prompts/SOAP.json', 'r') as file:
         prompt = json.load(file)
         
     # Insert the input SOAP into the last user role content

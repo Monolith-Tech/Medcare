@@ -31,7 +31,7 @@ def generate_conversation_transcript(transcription: str) -> str:
     
     transcription = get_openai_response(
         prompt = conversation_prompt(transcription_input=transcription),
-        model = Models.model_3_turbo
+        model = Models.model_4_turbo
     )
     
     return transcription

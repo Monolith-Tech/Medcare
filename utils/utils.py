@@ -4,6 +4,10 @@ import os
 import json
 import sys
 import hashlib
+from uuid import uuid4 as unique_id
+
+from transcript import read_conversation
+from soap_generation import generate_SOAP
 
 
 # Load admin users from the JSON file
@@ -31,5 +35,24 @@ def process_audio(audio_filepath: str) -> str:
     Converts audio -> Transcript -> Structured conversation -> SOAP
     """
     
+    id = unique_id()
     
+    conversation = read_conversation(
+        audio_file_input = audio_filepath,
+        verbose = True,
+        save_to_file = f"database/{id}/transcript.json"
+    )
+    
+    soap = generate_SOAP(
+        conversation = conversation,
+        verbose = True,
+        save_to_file = f"database/{id}/soap.txt"
+    )
+    
+    info = {
+        "title" : audio_filepath.split('/')[-1].split('.')[0].lower().strip()
+    }
+    with open(f"database/{id}/info.txt", 'w') as file:
+        json.dump(info, file)
 
+    
