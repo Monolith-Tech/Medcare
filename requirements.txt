@@ -3,3 +3,5 @@ assemblyai
 pyAudioAnalysis
 scikit-learn
 numpy
+eyed3
+pydub
