@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cyberpunk Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='dashboard.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Add Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="top-nav">
+      <a href="/" class="logo">Monolith</a>
+      <div class="nav-icons">
+        <a
+          href="https://github.com/monolith-tech"
+          target="_blank"
+          aria-label="GitHub"
+        >
+          <i class="fab fa-github fa-lg"></i>
+        </a>
+        <!-- Additional icons can be added here -->
+      </div>
+    </nav>
+
+    <div class="dashboard-container">
+      <header class="dashboard-header">
+        <h1>Welcome to Your Dashboard</h1>
+      </header>
+
+      <section class="actions">
+        <!-- Update the onclick attribute to redirect to /record_session -->
+        <button
+          onclick="window.location.href='/record_session'"
+          class="btn primary"
+        >
+          Start New Session
+        </button>
+        <form
+          id="conversation-form"
+          action="/submit_session"
+          method="post"
+          enctype="multipart/form-data"
+        >
+          <input
+            type="file"
+            name="audio_file"
+            id="audio-file"
+            accept="audio/*"
+            hidden
+          />
+          <label for="audio-file" class="btn secondary"
+            >Submit Conversation</label
+          >
+        </form>
+      </section>
+
+      <section class="entries">
+        <h2>Recent Entries</h2>
+        <ul>
+          {% for entry in entries %}
+          <li>
+            <a href="{{ url_for('record_entry', entry_id=entry['id']) }}"
+              >{{ entry['name'] }}</a
+            >
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+    </div>
+
+    <script src="{{ url_for('static', filename='dashboard.js') }}"></script>
+  </body>
+</html>

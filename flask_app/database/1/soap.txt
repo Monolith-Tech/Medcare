@@ -1,0 +1,19 @@
+Subjective (S):
+- Chief Complaint (CC): "I've been having a lot of chest pain and shortness of breath lately."
+- History of Present Illness (HPI): A 52-year-old male reports experiencing sharp, intermittent chest pain and shortness of breath for the past two weeks. Symptoms seem to worsen with physical activity and improve with rest.
+- Review of Systems (ROS): Positive for occasional cough, denies fever, nausea, vomiting, or leg swelling.
+- Past Medical History (PMH): Hypertension, Type 2 Diabetes Mellitus.
+- Family History (FH): Father had coronary artery disease, mother has hypertension.
+- Social History (SH): Smokes half a pack of cigarettes daily for 30 years, occasional alcohol use, works as a construction worker.
+- Medications: Lisinopril 20mg daily, Metformin 500mg twice daily.
+- Allergies: No known drug allergies.
+
+Assessment (A):
+- Diagnoses or Problems: Suspected stable angina pectoris secondary to coronary artery disease, considering patient's risk factors (smoking, hypertension, family history, and diabetes).
+
+Plan (P):
+- Medications Prescribed: Nitroglycerin sublingual tablets, as needed for chest pain. Continue current medications.
+- Therapies or Procedures Ordered: Schedule for a stress test and echocardiogram to evaluate cardiac function. Recommend starting a statin for cholesterol management.
+- Patient Instructions: Instructed to avoid strenuous activities until further evaluation, adopt a heart-healthy diet, and consider smoking cessation programs.
+- Follow-up Information: Follow-up appointment in 2 weeks to review test results and adjust treatment plan as necessary. Immediate ER visit advised if experiencing severe chest pain, lasting more than a few minutes, or if symptoms significantly worsen.
+- Referrals to Specialists: Refer to a cardiologist for further evaluation and management of suspected coronary artery disease.

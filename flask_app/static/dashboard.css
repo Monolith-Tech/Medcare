@@ -1,0 +1,107 @@
+/* Base and global styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    background-image: linear-gradient(to right, #0f0c29, #302b63);
+    color: #e0e0e0;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Top navigation styles */
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: rgba(51, 51, 51, 0.95);
+    backdrop-filter: blur(5px);
+    color: #ffffff;
+}
+
+/* Logo on the left */
+.top-nav .logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+/* GitHub link on the right */
+.top-nav .nav-icons a {
+    color: #ffffff;
+    margin-left: 20px;
+}
+
+/* Main content container */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(28, 28, 28, 0.9);
+    backdrop-filter: blur(3px);
+    border-radius: 8px;
+}
+
+/* Header within the container */
+.dashboard-header h1 {
+    color: #00c3ff;
+}
+
+/* Actions section styling */
+.actions {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    /* Adjust based on preference */
+    margin-top: 20px;
+}
+
+/* Buttons styling */
+.btn {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.primary:hover,
+.secondary:hover {
+    background-color: #0056b3;
+}
+
+/* Entries section */
+.entries {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.entries h2 {
+    text-align: center;
+}
+
+.entries ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.entries li a {
+    color: #00c3ff;
+    transition: color 0.3s ease;
+}
+
+.entries li a:hover {
+    color: #ffffff;
+}

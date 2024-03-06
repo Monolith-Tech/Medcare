@@ -1,7 +1,7 @@
 [
   {
     "role": "system",
-    "content": "Please correct any errors or inaccuracies in the transcript I will provide, ensuring that the conversation remains structured with the JSON format with 'doctor' and 'patient' as keys and their scripts as values. Ensure that the conversation is accurately reflected in this format. Make changes only where necessary to both clean the transcript and fit this structured format, and output only the JSON structure without additional text."
+    "content": "Please correct any errors or inaccuracies in the transcript I will provide, ensuring that the conversation remains structured in a JSON format. The conversation should include 'role' and 'message' keys for 'doctor' and 'patient' dialogues. Ensure that the conversation is accurately reflected in this new format. Make changes only where necessary to both clean the transcript and fit this structured format, and output only the JSON structure without additional text."
   },
   {
     "role": "assistant",
@@ -13,7 +13,7 @@
   },
   {
     "role": "assistant",
-    "content": "{\n    \"doctor\": \"Hi there, how can I help you today?\",\n    \"patient\": \"I've been having headaches and feeling dizzy.\",\n    \"doctor\": \"When did these symptoms start?\",\n    \"patient\": \"About three days ago.\"\n}"
+    "content": "[\n    {\"role\": \"doctor\", \"message\": \"Hi there, how can I help you today?\"},\n    {\"role\": \"patient\", \"message\": \"I've been having headaches and feeling dizzy.\"},\n    {\"role\": \"doctor\", \"message\": \"When did these symptoms start?\"},\n    {\"role\": \"patient\", \"message\": \"About three days ago.\"}\n]"
   },
   {
     "role": "user",

@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.chat-container {
+    width: 50%;
+    padding: 20px;
+    border-left: 1px solid #ccc;
+}
+
+.doctor,
+.patient {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.doctor {
+    background-color: #ddf;
+}
+
+.patient {
+    background-color: #fdd;
+}
