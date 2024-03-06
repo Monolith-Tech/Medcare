@@ -1,0 +1,22 @@
+[
+  {
+    "role": "system",
+    "content": "Please correct any errors or inaccuracies in the transcript I will provide, ensuring that the conversation remains structured with the JSON format with 'doctor' and 'patient' as keys and their scripts as values. Ensure that the conversation is accurately reflected in this format. Make changes only where necessary to both clean the transcript and fit this structured format, and output only the JSON structure without additional text."
+  },
+  {
+    "role": "assistant",
+    "content": "Okay, I understood the task."
+  },
+  {
+    "role": "user",
+    "content": "Hi there, how can I help you today? I've been having headaches and feeling dizzy. When did these symptoms start? About three days ago."
+  },
+  {
+    "role": "assistant",
+    "content": "{\n    \"doctor\": \"Hi there, how can I help you today?\",\n    \"patient\": \"I've been having headaches and feeling dizzy.\",\n    \"doctor\": \"When did these symptoms start?\",\n    \"patient\": \"About three days ago.\"\n}"
+  },
+  {
+    "role": "user",
+    "content": "Transcript will be inserted here."
+  }
+]

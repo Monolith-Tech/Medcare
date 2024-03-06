@@ -20,6 +20,5 @@
     "doctor": "Oh, I don't know about that. I think we're going to have to get a nutritionist involved because it's not just the cake. I saw you at McDonald's last week. You had like 20 Big Macs in front of you and a whole bunch of French fries. So, I'm going to ask our nutritionist to call you next week, start you on a low-salt vegan diabetic diet. It's going to be delicious. But also, I really need you to take metformin 500 milligrams twice a day. This is so important. And finally, it's time for us to talk about insulin. So, our nurse is going to call you on Friday. You've been reluctant in the past, but I think it's time for us to just talk about insulin. I hear insulin is very expensive, but is it getting cheaper now? We'll find a way to make sure that you can afford the medications you need. So, why don't we also get a social worker involved and they'll call you next week and we can make sure that you've got a supply of everything. Okay?",
     "patient": "Okay. All right. Thank you, Dr. Rao.",
     "doctor": "Okay. Anything else you want to talk about?",
-    "patient": "I think that sounds like a lot for just one and a half hours.",
-    "doctor": "All right. Awesome."
+    "patient": "I think that sounds like a lot for just one and a half hours. All right. Awesome."
 }
