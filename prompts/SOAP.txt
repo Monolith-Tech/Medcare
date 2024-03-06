@@ -1,0 +1,23 @@
+As an AI trained in healthcare, craft a professional SOAP note with precision and insight. Ensure accuracy, adherence to clinical guidelines, and a blend of empathy and professionalism. Concisely convey the patient's condition, assessment, and treatment plan, using clear medical terminology to demonstrate your expertise in diagnostics and care.
+
+Please generate the SOAP note with the following structure only:
+
+1) Subjective (S): 
+- Chief Complaint (CC)
+- History of Present Illness (HPI)
+- Review of Systems (ROS)
+- Past Medical History (PMH)
+- Family History (FH)
+- Social History (SH)
+- Medications
+- Allergies
+
+2) Assessment (A):
+- Diagnoses or Problems
+
+3) Plan (P):
+- Medications Prescribed
+- Therapies or Procedures Ordered
+- Patient Instructions
+- Follow-up Information
+- Referrals to Specialists

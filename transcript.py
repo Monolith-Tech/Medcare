@@ -6,7 +6,7 @@ from utils import (
     Models
 )
 
-from prompts import transcription_prompt
+from prompts import conversation_prompt
 
 
 def transcribe_audio(audio_file_input: str) -> str:
@@ -30,7 +30,7 @@ def generate_conversation_transcript(transcription: str) -> str:
     """
     
     transcription = get_openai_response(
-        prompt = transcription_prompt(transcription_input=transcription),
+        prompt = conversation_prompt(transcription_input=transcription),
         model = Models.model_3_turbo
     )
     
@@ -57,6 +57,7 @@ def read_conversation(audio_file_input: str, verbose=True, save_to_file=None) ->
             file.write(conversation)
     
     return conversation
+
 
 # main
 if __name__ == "__main__":

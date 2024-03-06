@@ -9,7 +9,7 @@
   },
   {
     "role": "user",
-    "content": "Hi there, how can I help you today? I've been having headaches and feeling dizzy. When did these symptoms start? About three days ago."
+    "content": "Transcription:\n\nHi there, how can I help you today? I've been having headaches and feeling dizzy. When did these symptoms start? About three days ago."
   },
   {
     "role": "assistant",
@@ -17,6 +17,6 @@
   },
   {
     "role": "user",
-    "content": "Transcript will be inserted here."
+    "content": "Transcription:\n\n{transcription}"
   }
 ]
