@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cyberpunk Dashboard</title>
+    <title>Monolith</title>
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='dashboard.css') }}"
@@ -35,7 +35,7 @@
 
     <div class="dashboard-container">
       <header class="dashboard-header">
-        <h1>Welcome to Your Dashboard</h1>
+        <h1>Record Book</h1>
       </header>
 
       {% with messages = get_flashed_messages(with_categories=true) %} {% if
@@ -84,6 +84,11 @@
       </section>
     </div>
 
+    <script>
+      document.getElementById("audio-file").onchange = function () {
+        document.getElementById("conversation-form").submit();
+      };
+    </script>
     <script src="{{ url_for('static', filename='dashboard.js') }}"></script>
   </body>
 </html>

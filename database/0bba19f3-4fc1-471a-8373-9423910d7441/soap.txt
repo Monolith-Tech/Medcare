@@ -1,0 +1,34 @@
+**Subjective (S):**
+
+- **Chief Complaint (CC):** Patient reports experiencing chest pain, tightness, and shortness of breath.
+- **History of Present Illness (HPI):** Symptoms began yesterday, initially triggered by physical exertion (walking up a flight of stairs). Symptoms lasted 20-30 minutes but recurred with less intense activity at home today. No loss of consciousness, but necessitated rest. Mild radiation of pain to the top left arm.
+- **Review of Systems (ROS):** Positive for chest pain and shortness of breath. Negative for syncope.
+- **Past Medical History (PMH):** Diabetes, Hypertension.
+- **Family History (FH):** Not provided.
+- **Social History (SH):** Not provided.
+- **Medications:** Not provided.
+- **Allergies:** Not provided.
+
+**Assessment (A):**
+
+- **Diagnoses or Problems:** 
+  1. Chest pain, potentially cardiac in origin given history of diabetes and hypertension.
+  2. Uncontrolled diabetes.
+
+**Plan (P):**
+
+- **Medications Prescribed:**
+  - Metformin 500 mg twice a day.
+  - Discussion about starting insulin therapy for diabetes management.
+- **Therapies or Procedures Ordered:**
+  - Immediate EKG and echocardiogram to assess cardiac function.
+  - Blood tests to evaluate cardiac enzymes and glucose levels.
+- **Patient Instructions:**
+  - Follow a low-salt vegan diabetic diet as advised by a nutritionist.
+  - Avoid strenuous activities until further evaluation.
+- **Follow-up Information:**
+  - Urgent follow-up this afternoon for cardiac evaluation.
+  - Regular follow-up to monitor diabetes control and adjust insulin therapy as needed.
+- **Referrals to Specialists:**
+  - Referral to a nutritionist for dietary management of diabetes.
+  - Social worker involvement to assist with medication affordability.
