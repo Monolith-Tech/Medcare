@@ -58,12 +58,16 @@
       </div>
     </section>
 
+
+
     <section class="container my-5">
       <h3>Document</h3>
       <div class="p-3 bg-light border rounded">
-        <pre class="pre-wrap">{{ soap }}</pre>
+        <!-- Change pre to div and add an ID -->
+        <div id="markdown-content" class="pre-wrap">{{ soap }}</div>
       </div>
     </section>
+    
 
     <section class="container my-5">
       <h3>Conversation History</h3>
@@ -78,8 +82,20 @@
       </div>
     </section>
 
+    <script>
+      document.addEventListener('DOMContentLoaded', (event) => {
+        // Get the Markdown content from the div
+        const markdownContent = document.getElementById('markdown-content').innerText;
+        // Convert the Markdown to HTML
+        const htmlContent = marked.parse(markdownContent);
+        // Replace the div's content with the converted HTML
+        document.getElementById('markdown-content').innerHTML = htmlContent;
+      });
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   </body>
 </html>
