@@ -1,11 +1,11 @@
 # SOAP generation
 
-from tools import (
+from utils.tools import (
     get_openai_response,
     Models
 )
 
-from prompts import SOAP_prompt
+from utils.prompts import SOAP_prompt
 
 
 def generate_SOAP(conversation: str, verbose=True, save_to_file=None) -> str:

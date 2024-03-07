@@ -1,12 +1,12 @@
 # Create transcriptions
 
-from tools import (
+from utils.tools import (
     openai_client,
     get_openai_response,
     Models
 )
 
-from prompts import conversation_prompt
+from utils.prompts import conversation_prompt
 
 
 def transcribe_audio(audio_file_input: str) -> str:
@@ -29,12 +29,14 @@ def generate_conversation_transcript(transcription: str) -> str:
     Generate structured conversation transcript from JSON file.
     """
     
-    transcription = get_openai_response(
+    conversation = get_openai_response(
         prompt = conversation_prompt(transcription_input=transcription),
-        model = Models.model_4_turbo
+        model = Models.model_3
     )
+    # print(conversation_prompt(transcription_input=transcription))
+    # print(transcription)
     
-    return transcription
+    return conversation
 
 
 def read_conversation(audio_file_input: str, verbose=True, save_to_file=None) -> str:
