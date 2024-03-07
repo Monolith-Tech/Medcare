@@ -149,24 +149,23 @@ def record_entry(entry_id):
     with open(soap_filename, 'r') as file:
         soap_data = file.read().strip()
 
-    diagnosis_file = os.path.join(db_directory, 'DD.txt')
-    if os.path.exists(diagnosis_file):
-        with open(diagnosis_file) as file:
-            diff_diagnosis = file.read().strip()
-        return render_template("records.html", transcript=transcript_data, soap=soap_data, diff_diagnosis=diff_diagnosis)
+    # diagnosis_file = os.path.join(db_directory, 'DD.txt')
+    # if os.path.exists(diagnosis_file):
+    #     with open(diagnosis_file) as file:
+    #         DD = file.read().strip()
+    #     return render_template("records.html", transcript=transcript_data, soap=soap_data, diagnosis=DD)
     
-    return render_template("records.html", transcript=transcript_data, soap=soap_data)
+    # return render_template("records.html", transcript=transcript_data, soap=soap_data)
     
-    # diff_diagnosis = request.args.get('diff_diagnosis', None)
+    diff_diagnosis = request.args.get('diff_diagnosis', None)
 
-    # return render_template(
-    #     "records.html", 
-    #     transcript = transcript_data, 
-    #     soap = soap_data, 
-    #     diff_diagnosis = diff_diagnosis, 
-    #     entry_id = entry_id
-    # )
-
+    return render_template(
+        "records.html", 
+        transcript = transcript_data, 
+        soap = soap_data, 
+        diff_diagnosis = diff_diagnosis, 
+        entry_id = entry_id
+    )
 
 
 # upload reports
