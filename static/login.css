@@ -38,7 +38,6 @@ input[type="password"] {
     border-radius: 4px;
     width: 100%;
     box-sizing: border-box;
-    /* Ensure padding is included in the width */
 }
 
 input[type="submit"] {

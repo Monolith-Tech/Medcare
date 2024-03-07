@@ -2,7 +2,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #121212;
-    background-image: linear-gradient(to right, #0f0c29, #302b63);
+    background-image: linear-gradient(to right, #0f0c29, hsl(245, 39%, 28%));
     color: #ffffff;
     line-height: 1.6;
     margin: 0;

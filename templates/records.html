@@ -8,10 +8,14 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
 
     <style>
       body {
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         background-color: #121212;
         background-image: linear-gradient(to right, #0f0c29, #302b63);
         color: #ffffff;
@@ -29,11 +33,57 @@
       }
 
       h3 {
-        color: #00c3ff; 
+        color: #00c3ff;
       }
 
+      /* Top navigation styles */
+      .top-nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 30px; /* Maintain padding for space on the sides */
+        background-color: rgba(30, 25, 31, 0.064);
+        backdrop-filter: blur(10px); /* Smooth look with a blur effect */
+        color: #ffffff;
+        height: 60px; /* Fixed height for consistency */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+        width: 100%; /* Ensure nav stretches full width */
+      }
 
-    
+      /* Logo styling for alignment and visibility */
+      .top-nav .logo {
+        font-weight: bold;
+        font-size: 24px; /* Enhanced size for visibility */
+        color: #ffffff;
+        text-decoration: none; /* Remove underline */
+        transition: color 0.3s ease; /* Smooth transition for hover */
+      }
+
+      /* Hover effect for logo */
+      .top-nav .logo:hover {
+        color: #00c3ff; /* Highlight color on hover */
+      }
+
+      /* Navigation icons and links */
+      .top-nav .nav-icons {
+        display: flex;
+        align-items: center; /* Center items vertically */
+      }
+
+      /* Individual link styling */
+      .top-nav .nav-icons a {
+        color: #ffffff;
+        margin-left: 20px; /* Space between navigation items */
+        font-size: 20px; /* Visibility and readability */
+        text-decoration: none; /* Remove underline */
+        transition: color 0.3s ease; /* Color transition on hover */
+      }
+
+      /* Hover effect for navigation items */
+      .top-nav .nav-icons a:hover {
+        color: #00c3ff; /* Highlight color on hover */
+      }
+
       .chat-container {
         display: flex;
         flex-direction: column;
@@ -45,61 +95,47 @@
         border-radius: 8px; /* Rounded corners for consistency */
         width: 100%;
       }
-    
+
       .chat-message {
         margin: 5px;
         padding: 10px;
         border-radius: 5px;
         color: #ffffff; /* Ensures text is readable against the dark theme */
       }
-    
+
       .doctor-message {
         align-self: flex-end;
-        background-color: #302b63; 
+        background-color: #302b63;
         max-width: 80%;
       }
-    
+
       .patient-message {
         align-self: flex-start;
         max-width: 80%;
-        background-color: #0080ff3f; 
+        background-color: #0080ff3f;
       }
-    
+
       .pre-wrap {
         white-space: pre-wrap;
         word-wrap: break-word;
-        background-color: rgba(30, 25, 31, 0.64); /* Matches chat container bg */
-        color: #e0e0e0; /* Light grey for readability */
+        background-color: rgb(19, 6, 54, 0.98);
+        color: #e0e0e0;
         border-radius: 5px;
-        border: 1px solid #444; /* Subtle border for definition */
-        padding: 10px;
+        border: 1px solid #444;
+        padding: 14px;
         box-shadow: 0px 0px 3px rgba(73, 106, 214, 0.7);
       }
     </style>
-    
-    
   </head>
   <body>
-    <section class="container-fluid bg-light py-3">
-      <div class="row justify-content-between">
-        <div class="col-auto">
-          <button class="btn btn-primary" onclick="window.location.href='/'">
-            Home
-          </button>
-        </div>
-        <div class="col-auto text-center">
-          <h2>Medical Record Details</h2>
-        </div>
-        <div class="col-auto">
-          <button
-            class="btn btn-info"
-            onclick="window.location.href='/diagnosis'"
-          >
-            Move to Differential Diagnosis
-          </button>
-        </div>
+    <nav class="top-nav">
+      <a href="/" class="logo">Monolith</a>
+      <div class="nav-icons">
+        <a href="/move-to-diff" aria-label="Move to Diff">
+          <i class="fas fa-arrow-right fa-lg"></i> Move to Diff
+        </a>
       </div>
-    </section>
+    </nav>
 
     <section class="container my-5">
       <h3>Document</h3>
