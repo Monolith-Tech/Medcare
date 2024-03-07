@@ -9,7 +9,7 @@ def conversation_prompt(transcription_input: str) -> str:
         prompt = json.load(file)
         
     # Insert the input transcription into the last user role content
-    prompt[-1]['content'].format(transcription=transcription_input)
+    prompt[-1]['content'] = prompt[-1]['content'].format(transcription=transcription_input)
     return prompt
 
 
@@ -19,6 +19,6 @@ def SOAP_prompt(conversation_input: str) -> str:
         prompt = json.load(file)
         
     # Insert the input SOAP into the last user role content
-    prompt[-1]['content'].format(conversation=conversation_input)
+    prompt[-1]['content'] = prompt[-1]['content'].format(conversation=conversation_input)
     return prompt
 

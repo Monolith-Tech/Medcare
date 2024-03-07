@@ -30,11 +30,9 @@ def generate_conversation_transcript(transcription: str) -> str:
     """
     
     conversation = get_openai_response(
-        prompt = conversation_prompt(transcription_input=transcription),
+        prompt := conversation_prompt(transcription_input=transcription),
         model = Models.model_3
     )
-    # print(conversation_prompt(transcription_input=transcription))
-    # print(transcription)
     
     return conversation
 
