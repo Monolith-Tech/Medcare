@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-image: linear-gradient(to right, #0f0c29, hsl(245, 39%, 28%));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,7 +13,7 @@ body {
     margin: 0 auto;
     padding: 40px;
     border: 1px solid #ccc;
-    background-color: #fff;
+    background-color: rgba(30, 25, 31, 0.064);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
@@ -29,6 +29,7 @@ input {
     display: block;
     width: 100%;
     margin-bottom: 20px;
+    color: rgb(93, 0, 255);
 }
 
 input[type="text"],

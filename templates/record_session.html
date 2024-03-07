@@ -11,9 +11,7 @@
   <body>
     <div class="record-container">
       <button id="startBtn" class="button">Start</button>
-      <div id="recordingAnimation" class="recording-animation"></div>
-      <div id="waveAnimation" class="wave-container"></div>
-
+      <div id="statusMessage" style="color: white; display: none;">Recording...</div> 
       <button id="stopBtn" class="button" disabled>Stop</button>
     </div>
     <script src="{{ url_for('static', filename='record_session.js') }}"></script>
