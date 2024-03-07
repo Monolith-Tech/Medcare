@@ -73,7 +73,8 @@ function stopRecording() {
     mediaRecorder.stop();
     document.getElementById('startBtn').disabled = false;
     document.getElementById('stopBtn').disabled = true;
-    document.getElementById('statusMessage').style.display = 'none'; // Hide recording message
+    document.getElementById('statusMessage').innerText = 'Generating SOAP...'; // Update message to indicate processing
+    document.getElementById('statusMessage').style.display = 'block'; // Make sure the message is visible
     mediaRecorder.onstop = async () => {
         const fileName = prompt("Please enter the name for your audio file:", "MyRecording");
         if (fileName) {
@@ -89,12 +90,17 @@ function stopRecording() {
                 console.log(response);
                 if (response.redirected) {
                     window.location.href = response.url;
+                } else {
+                    // Optionally, update or hide the status message once processing is complete or if you navigate the user elsewhere
+                    document.getElementById('statusMessage').style.display = 'none'; // Hide the message after processing is complete
                 }
             } catch (error) {
                 console.error('Error:', error);
+                document.getElementById('statusMessage').style.display = 'none'; // Hide the message in case of error
             }
         } else {
             console.log("No name entered for the audio file. Upload cancelled.");
+            document.getElementById('statusMessage').style.display = 'none'; // Hide the message if upload is cancelled
         }
         audioChunks = [];
     };
