@@ -41,7 +41,7 @@ def process_audio(audio_filepath: str) -> str:
     Converts audio -> Transcript -> Structured conversation -> SOAP
     """
     
-    id = unique_id()
+    id = str(unique_id())
     os.makedirs(f"database/{id}")
     
     conversation = read_conversation(
@@ -68,13 +68,13 @@ def perform_DD(id: str) -> str:
     """
     Generate a differential diagnosis.
     """
-    
+
     SOAP_filename = f"database/{id}/soap.txt"
     with open(SOAP_filename, 'r') as file:
         SOAP = file.read().strip()
     
     # store test result docs in the following directory and load it in.
-    test_results = summarize_test_results(dir=f"database/{id}/tests/")
+    test_results = summarize_test_results(dir=f"database/{id}/tests")
 
     DD = generate_DD(
         SOAP = SOAP,

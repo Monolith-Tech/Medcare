@@ -1,0 +1,26 @@
+**Subjective (S):**
+
+- **Chief Complaint (CC):** Chest pain with tightness and shortness of breath.
+- **History of Present Illness (HPI):** Symptoms started yesterday, exacerbated by physical activity (walking up stairs). Symptoms lasted 20-30 minutes but recurred with less intense activity today. Patient also reports palpitations and lightheadedness.
+- **Review of Systems (ROS):** Positive for chest pain, palpitations, and lightheadedness. No loss of consciousness.
+- **Past Medical History (PMH):** Diabetes, hypertension.
+- **Family History (FH):** Great-great-great-grandfather had heart disease.
+- **Social History (SH):** Non-compliant with diabetic diet, observed consuming excessive fast food.
+- **Medications:** Metformin (intermittently taken).
+- **Allergies:** No known drug allergies.
+
+**Objective (O):** *Data not provided in the conversation.*
+
+**Assessment (A):**
+
+1. Suspected unstable angina or acute coronary syndrome due to risk factors (diabetes, hypertension, family history) and clinical presentation.
+2. Uncontrolled diabetes mellitus.
+3. Non-compliance with diabetic management and diet.
+
+**Plan (P):**
+
+- **Medications Prescribed:** Continue Metformin 500 mg twice daily. Discuss initiation of insulin therapy.
+- **Therapies or Procedures Ordered:** Immediate EKG and echocardiogram. Blood tests including CBC, basic metabolic panel, and troponin level.
+- **Patient Instructions:** Urgent visit to the cardiologist's office for cardiovascular evaluation. Strict adherence to prescribed medications. 
+- **Follow-up Information:** EKG, echocardiogram, and blood test results to be reviewed this afternoon. Nurse to call on Friday regarding insulin therapy. Social worker to contact next week for medication affordability assistance.
+- **Referrals to Specialists:** Referral to a nutritionist for a low-salt vegan diabetic diet consultation.

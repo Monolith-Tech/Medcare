@@ -159,6 +159,11 @@ def record_entry(entry_id):
     
     diff_diagnosis = request.args.get('diff_diagnosis', None)
 
+    diagnosis_file = os.path.join(db_directory, 'DD.txt')
+    if os.path.exists(diagnosis_file):
+        with open(diagnosis_file) as file:
+            diff_diagnosis = file.read().strip()
+
     return render_template(
         "records.html", 
         transcript = transcript_data, 
@@ -176,11 +181,14 @@ def upload_reports(entry_id):
         flash('No file part')
         return redirect(request.url)
     
+    if not os.path.exists(f'database/{entry_id}/tests'):
+        os.makedirs(f'database/{entry_id}/tests')
+
     files = request.files.getlist('report_files')
     for file in files:
         if file and '.' in file.filename and file.filename.rsplit('.', 1)[1].lower() in {'pdf'}:
             filename = secure_filename(file.filename)
-            file.save(os.path.join(f'database/{entry_id}/tests', filename))
+            file.save(f'database/{entry_id}/tests/{filename}')
     
     diff_diagnosis = perform_DD(id=entry_id)
     
