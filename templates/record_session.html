@@ -2,16 +2,27 @@
 <html>
   <head>
     <title>Audio Recorder</title>
-    <link rel="icon" type="image/png" href="{{ url_for('static', filename='icon.png') }}" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{ url_for('static', filename='icon.png') }}"
+    />
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='record_session.css') }}"
     />
   </head>
+    <img
+      src="{{ url_for('static', filename='icon.png') }}"
+      alt="Icon"
+      style="height: 80px; margin-right: 5px; margin-bottom: 40px"
+    />
   <body>
     <div class="record-container">
       <button id="startBtn" class="button">Start</button>
-      <div id="statusMessage" style="color: white; display: none;">Recording...</div> 
+      <div id="statusMessage" style="color: white; display: none">
+        Recording...
+      </div>
       <button id="stopBtn" class="button" disabled>Stop</button>
     </div>
     <script src="{{ url_for('static', filename='record_session.js') }}"></script>

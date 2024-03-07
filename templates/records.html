@@ -4,7 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Record Details</title>
-    <link rel="icon" type="image/png" href="{{ url_for('static', filename='icon.png') }}" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="{{ url_for('static', filename='icon.png') }}"
+    />
     <link
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
@@ -41,21 +45,21 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 30px; 
+        padding: 0 30px;
         background-color: rgba(30, 25, 31, 0.064);
-        backdrop-filter: blur(10px); 
+        backdrop-filter: blur(10px);
         color: #ffffff;
-        height: 60px; 
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
-        width: 100%; 
+        height: 60px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        width: 100%;
       }
 
       .top-nav .logo {
         font-weight: bold;
-        font-size: 24px; 
+        font-size: 24px;
         color: #ffffff;
-        text-decoration: none; 
-        transition: color 0.3s ease; 
+        text-decoration: none;
+        transition: color 0.3s ease;
       }
 
       .top-nav .logo:hover {
@@ -64,26 +68,26 @@
 
       .top-nav .nav-icons {
         display: flex;
-        align-items: center; 
+        align-items: center;
       }
 
       .top-nav .nav-icons a {
         color: #ffffff;
         margin-left: 20px;
-        font-size: 20px; 
+        font-size: 20px;
         text-decoration: none;
-        transition: color 0.3s ease; 
+        transition: color 0.3s ease;
       }
 
       .top-nav .nav-icons a:hover {
-        color: #00c3ff; 
+        color: #00c3ff;
       }
 
       .chat-container {
         display: flex;
         flex-direction: column;
-        align-items: center; 
-        margin: 20px auto; 
+        align-items: center;
+        margin: 20px auto;
         padding: 20px;
         background-color: rgba(27, 9, 53, 0.217);
         box-shadow: 0px 0px 3px rgba(73, 106, 214, 0.7);
@@ -95,7 +99,7 @@
         margin: 5px;
         padding: 10px;
         border-radius: 5px;
-        color: #ffffff; 
+        color: #ffffff;
       }
 
       .doctor-message {
@@ -124,7 +128,14 @@
   </head>
   <body>
     <nav class="top-nav">
-      <a href="/" class="logo">Monolith</a>
+      <a href="/" class="logo">
+        <img
+          src="{{ url_for('static', filename='icon.png') }}"
+          alt="Icon"
+          style="height: 40px; margin-right: 5px; vertical-align: middle"
+        />
+        Monolith
+      </a>
       <div class="nav-icons">
         <a href="/diagnosis" aria-label="Move to Diff">
           <i class="fas fa-arrow-right fa-lg"></i> Move to Diff

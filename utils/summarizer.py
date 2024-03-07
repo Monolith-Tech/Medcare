@@ -8,3 +8,6 @@ from utils.tools import (
 
 from utils.prompts import conversation_prompt
 
+
+def summarize_test_results():
+    pass

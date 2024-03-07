@@ -129,16 +129,21 @@ body {
 }
 
 .entries li a {
+    text-decoration: none;
+    background-color: rgba(255, 255, 255, 0.023);
     color: #00c3ff;
     transition: color 0.3s ease;
-    padding: 5px 10px;
+    padding: 10px 200px;
+    width: 200px;
     border-radius: 4px;
     display: block;
+    text-align: center;
 }
 
 .entries li a:hover {
     color: #ffffff;
     background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 0.2s ease;
 }
 
 .flash-message {
