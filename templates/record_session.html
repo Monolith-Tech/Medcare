@@ -2,14 +2,20 @@
 <html>
   <head>
     <title>Audio Recorder</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='icon.png') }}" />
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='record_session.css') }}"
     />
   </head>
   <body>
-    <button id="startBtn">Start</button>
-    <button id="stopBtn" disabled>Stop</button>
+    <div class="record-container">
+      <button id="startBtn" class="button">Start</button>
+      <div id="recordingAnimation" class="recording-animation"></div>
+      <div id="waveAnimation" class="wave-container"></div>
+
+      <button id="stopBtn" class="button" disabled>Stop</button>
+    </div>
     <script src="{{ url_for('static', filename='record_session.js') }}"></script>
   </body>
 </html>

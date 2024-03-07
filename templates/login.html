@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Admin Login</title>
+    <title>Login</title>
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='icon.png') }}" />
     <link
       rel="stylesheet"
       href="{{ url_for('static', filename='login.css') }}"
@@ -10,7 +11,7 @@
 
   <body>
     <div class="container">
-      <h1>Admin Login</h1>
+      <h1>Login</h1>
       {% if error %}
       <p class="error">{{ error }}</p>
       {% endif %}

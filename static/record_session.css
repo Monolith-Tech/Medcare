@@ -1,5 +1,95 @@
-button {
-    margin: 10px;
-    padding: 10px;
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    background-image: linear-gradient(to right, #0f0c29, hsl(245, 39%, 28%));
+    color: #ffffff;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.record-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+    width: 80%;
+    max-width: 300px;
+    padding: 20px;
+    background-color: rgba(30, 25, 31, 0.064);
+    box-shadow: 0px 0px 3px rgba(0, 123, 255, 0.5);
+    backdrop-filter: blur(5px);
+    border-radius: 8px;
+}
+
+.button {
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     font-size: 16px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+
+.wave-container {
+    display: none;
+    /* Hidden by default, shown when recording starts */
+    width: 100%;
+    height: 100px;
+    /* Adjust based on your layout */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: waveGradient 15s ease infinite, moveWave 3s linear infinite;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+}
+
+@keyframes waveGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes moveWave {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-25%);
+    }
+}
+
+.wave-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="160" height="100" viewBox="0 0 160 100"><path fill="%23ffffff" fill-opacity="0.5" d="M0 50 Q 40 0 80 50 T 160 50 V100 H0 V50"></path><path fill="%23ffffff" d="M0 50 Q 40 100 80 50 T 160 50 V100 H0 V50"></path></svg>');
+    animation: moveWave 3s linear infinite;
 }
