@@ -98,7 +98,7 @@ def record_session():
     return render_template('record_session.html')
 
 
-# record new session
+# submit new session
 @app.route('/submit_session', methods=['GET', 'POST'])
 @login_required
 def submit_session():
@@ -149,18 +149,55 @@ def record_entry(entry_id):
     with open(soap_filename, 'r') as file:
         soap_data = file.read().strip()
 
+    diagnosis_file = os.path.join(db_directory, 'DD.txt')
+    if os.path.exists(diagnosis_file):
+        with open(diagnosis_file) as file:
+            diff_diagnosis = file.read().strip()
+        return render_template("records.html", transcript=transcript_data, soap=soap_data, diff_diagnosis=diff_diagnosis)
+    
     return render_template("records.html", transcript=transcript_data, soap=soap_data)
+    
+    # diff_diagnosis = request.args.get('diff_diagnosis', None)
+
+    # return render_template(
+    #     "records.html", 
+    #     transcript = transcript_data, 
+    #     soap = soap_data, 
+    #     diff_diagnosis = diff_diagnosis, 
+    #     entry_id = entry_id
+    # )
 
 
-# differential diagnosis
-@app.route('/diagnosis/<entry_id>')
+
+# upload reports
+@app.route('/upload_reports/<entry_id>', methods=['POST'])
 @login_required
-def diagnosis(entry_id):
-    """
-    Level 4
-    """
+def upload_reports(entry_id):
+    if 'report_files' not in request.files:
+        flash('No file part')
+        return redirect(request.url)
+    
+    files = request.files.getlist('report_files')
+    for file in files:
+        if file and '.' in file.filename and file.filename.rsplit('.', 1)[1].lower() in {'pdf'}:
+            filename = secure_filename(file.filename)
+            file.save(os.path.join(f'database/{entry_id}/tests', filename))
+    
+    diff_diagnosis = perform_DD(id=entry_id)
+    
+    return redirect(url_for('record_entry', entry_id=entry_id, diff_diagnosis=diff_diagnosis))
 
-    return render_template('diagnosis.html')
+
+
+# # differential diagnosis
+# @app.route('/diagnosis/<entry_id>')
+# @login_required
+# def diagnosis(entry_id):
+#     """
+#     Level 4
+#     """
+
+#     return render_template('diagnosis.html')
 
 
 # main

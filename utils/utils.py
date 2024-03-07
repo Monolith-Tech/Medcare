@@ -74,7 +74,7 @@ def perform_DD(id: str) -> str:
         SOAP = file.read().strip()
     
     # store test result docs in the following directory and load it in.
-    test_results = summarize_test_results(dir="database/{id}/tests/")
+    test_results = summarize_test_results(dir=f"database/{id}/tests/")
 
     DD = generate_DD(
         SOAP = SOAP,

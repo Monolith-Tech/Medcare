@@ -137,8 +137,9 @@
         Monolith
       </a>
       <div class="nav-icons">
-        <a href="/diagnosis" aria-label="Move to Diff">
-          <i class="fas fa-arrow-right fa-lg"></i> Move to Diff
+        <a href="#diffdiag" aria-label="Move to Diff">
+          <i class="fas fa-arrow-right fa-lg"></i> Upload reports | Different
+          diagnosis
         </a>
       </div>
     </nav>
@@ -164,14 +165,33 @@
       </div>
     </section>
 
+    {% if diff_diagnosis %}
+    <section class="container my-5">
+      <h3>Differential Diagnosis</h3>
+      <div class="p-3 bg-light border rounded">
+        <!-- Change pre to div and add an ID -->
+        <div id="markdown-content" class="pre-wrap">{{ diff_diagnosis }}</div>
+      </div>
+    </section>
+    {% endif %}
+
+    <section id="diffdiag" class="container my-5">
+      <h3>Upload Reports</h3>
+      <form
+        action="{{ url_for('upload_reports', entry_id=entry_id) }}"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input type="file" name="report_files" multiple />
+        <button type="submit">Upload</button>
+      </form>
+    </section>
+
     <script>
       document.addEventListener("DOMContentLoaded", (event) => {
-        // Get the Markdown content from the div
         const markdownContent =
           document.getElementById("markdown-content").innerText;
-        // Convert the Markdown to HTML
         const htmlContent = marked.parse(markdownContent);
-        // Replace the div's content with the converted HTML
         document.getElementById("markdown-content").innerHTML = htmlContent;
       });
     </script>
