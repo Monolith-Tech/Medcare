@@ -34,3 +34,15 @@ def DD_prompt(SOAP: str, test_results: str) -> str:
         test_results = test_results
     )
     return prompt
+
+
+# DD prompt
+def summarize_prompt(test_results: str) -> str:
+    with open('utils/prompts/summarize.json', 'r') as file:
+        prompt = json.load(file)
+
+    # Insert the input DD into the last user role content
+    prompt[-1]['content'] = prompt[-1]['content'].format(
+        test_results = test_results
+    )
+    return prompt

@@ -152,6 +152,17 @@ def record_entry(entry_id):
     return render_template("records.html", transcript=transcript_data, soap=soap_data)
 
 
+# differential diagnosis
+@app.route('/diagnosis/<entry_id>')
+@login_required
+def diagnosis(entry_id):
+    """
+    Level 4
+    """
+
+    return render_template('diagnosis.html')
+
+
 # main
 if __name__ == '__main__':
     app.run(
