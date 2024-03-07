@@ -1,4 +1,3 @@
-/* Base and global styles */
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #121212;
@@ -7,56 +6,51 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    min-height: 100vh; /* Ensure full vertical height */
+    min-height: 100vh;
     display: flex;
-    flex-direction: column; /* Stack elements vertically */
+    flex-direction: column;
 }
 
-/* Top navigation styles */
 .top-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 30px; /* Increase padding for more space on the sides */
+    padding: 0 30px;
     background-color: rgba(30, 25, 31, 0.064);
-    backdrop-filter: blur(10px); /* Increase blur for a smoother look */
+    backdrop-filter: blur(10px);
     color: #ffffff;
-    height: 60px; /* Set a fixed height for consistency */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Add subtle shadow for depth */
+    height: 60px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Logo on the left */
 .top-nav .logo {
     font-weight: bold;
-    font-size: 24px; /* Increase size for visibility */
+    font-size: 24px;
     color: #ffffff;
-    text-decoration: none; /* Remove underline from links */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 .top-nav .logo:hover {
-    color: #00c3ff; /* Highlight color on hover */
+    color: #00c3ff;
 }
 
-/* GitHub link on the right */
 .top-nav .nav-icons {
-    display: flex; /* Ensure icons align horizontally */
-    align-items: center; /* Center icons vertically */
+    display: flex;
+    align-items: center;
 }
 
 .top-nav .nav-icons a {
     color: #ffffff;
-    margin-left: 20px; /* Ensure spacing between icons */
-    font-size: 20px; /* Adjust size for better visibility */
-    transition: color 0.3s ease; /* Smooth transition for hover effect */
+    margin-left: 20px;
+    font-size: 20px;
+    transition: color 0.3s ease;
 }
 
 .top-nav .nav-icons a:hover {
-    color: #00c3ff; /* Highlight color on hover */
+    color: #00c3ff;
 }
 
-
-/* Main content container */
 .dashboard-container {
     display: flex;
     flex-direction: column;
@@ -69,37 +63,34 @@ body {
     box-shadow: 0px 0px 3px rgba(73, 106, 214, 0.7);
     backdrop-filter: blur(3px);
     border-radius: 8px;
-    flex-grow: 1; /* Allows container to expand */
+    flex-grow: 1;
 }
 
 .dashboard-header {
-    width: 100%; 
-    text-align: center; 
-    padding: 20px 0; 
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
     margin-bottom: 40px;
-    border-bottom: 2px solid #302b63; 
+    border-bottom: 2px solid #302b63;
 }
 
 .dashboard-header h1 {
-    color: #00c3ff; 
-    font-size: 28px; 
-    font-weight: 500; 
-    margin: 0; 
-    padding: 0; 
+    color: #00c3ff;
+    font-size: 28px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
 }
 
-
-/* Actions section styling */
 .actions {
     display: flex;
     justify-content: center;
     width: 100%;
-    gap: 20px; /* Maintain gap for responsiveness */
-    flex-wrap: wrap; /* Wrap buttons on small screens */
+    gap: 20px;
+    flex-wrap: wrap;
     margin-top: 20px;
 }
 
-/* Buttons styling */
 .btn {
     border: none;
     border-radius: 5px;
@@ -109,8 +100,8 @@ body {
     background-color: #007bff;
     color: #ffffff;
     transition: background-color 0.3s ease;
-    display: inline-block; /* Ensure buttons align nicely */
-    text-align: center; /* Center text in buttons */
+    display: inline-block;
+    text-align: center;
 }
 
 .primary:hover,
@@ -118,15 +109,14 @@ body {
     background-color: #0056b3;
 }
 
-/* Entries section */
 .entries {
     width: 100%;
-    margin-top: 40px; /* Increased space above section */
+    margin-top: 40px;
 }
 
 .entries h2 {
     text-align: center;
-    margin-bottom: 20px; /* Space below the section header */
+    margin-bottom: 20px;
 }
 
 .entries ul {
@@ -135,20 +125,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px; /* Space between list items */
+    gap: 10px;
 }
 
 .entries li a {
     color: #00c3ff;
     transition: color 0.3s ease;
-    padding: 5px 10px; /* Padding for better touch targets */
-    border-radius: 4px; /* Rounded edges for links */
-    display: block; /* Make the entire area clickable */
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: block;
 }
 
 .entries li a:hover {
     color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.1); /* Slight highlight on hover */
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .flash-message {
@@ -157,8 +147,8 @@ body {
     margin-bottom: 20px;
     border: 1px solid transparent;
     border-radius: 4px;
-    width: 90%; /* Align message width with container */
-    text-align: center; /* Center message text */
+    width: 90%;
+    text-align: center;
 }
 
 .flash-message.success {
@@ -170,7 +160,3 @@ body {
     background-color: #f8d7da;
     border-color: #f5c6cb;
 }
-
-
-
-
