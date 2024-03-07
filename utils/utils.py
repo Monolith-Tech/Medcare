@@ -8,6 +8,8 @@ from uuid import uuid4 as unique_id
 
 from utils.transcript import read_conversation
 from utils.soap_generation import generate_SOAP
+from utils.dd_generation import generate_DD
+from utils.summarizer import summarize_test_results
 
 
 # Load admin users from the JSON file
@@ -61,3 +63,23 @@ def process_audio(audio_filepath: str) -> str:
     with open(f"database/{id}/info.json", 'w') as file:
         json.dump(info, file)
 
+
+def perform_DD(id: str) -> str:
+    """
+    Generate a differential diagnosis.
+    """
+    
+    SOAP_filename = f"database/{id}/soap.txt"
+    with open(SOAP_filename, 'r') as file:
+        SOAP = file.read().strip()
+    
+    # store test result docs in the following directory and load it in.
+    test_results = summarize_test_results(dir="database/{id}/tests/")
+
+    DD = generate_DD(
+        SOAP = SOAP,
+        test_results = test_results,
+        verbose = True,
+        save_to_file = f"database/{id}/DD.txt"
+    )
+    print("=> Differential diagnosis done")

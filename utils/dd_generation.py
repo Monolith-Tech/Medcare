@@ -15,15 +15,19 @@ from utils.tools import (
 from utils.prompts import DD_prompt
 
 
-def generate_DD(patient_symptoms: str, patient_history: str, physical_examination: str, test_results: str, verbose=True, save_to_file=None) -> str:
+def generate_DD(SOAP: str, test_results: str, verbose=True, save_to_file=None) -> str:
     """
-    Generate a differential diagnosis based on the patient's symptoms, history, physical examination findings, and test results.
+    Generate a differential diagnosis based on the patient's:
+        - SOAP
+        - test results (summarized)
     """
 
     print("* Generating Differential Diagnosis...")
     DD = get_openai_response(
-        prompt=DD_prompt(patient_symptoms=patient_symptoms, patient_history=patient_history,
-                         physical_examination=physical_examination, test_results=test_results),
+        prompt=DD_prompt(
+            SOAP = SOAP,
+            test_results = test_results
+        ),
         model=Models.model_4_turbo
     )
 
@@ -39,19 +43,18 @@ def generate_DD(patient_symptoms: str, patient_history: str, physical_examinatio
 
 # main
 if __name__ == "__main__":
-    # Example inputs; in a real scenario, these would be gathered from a patient's records or consultation
-    patient_symptoms = "Example symptoms text here"
-    patient_history = "Example patient history here"
-    physical_examination = "Example physical examination findings here"
-    test_results = "Example test results here"
+    SOAP_filename = "Demo/demo_soap.txt"
+    with open(SOAP_filename, 'r') as file:
+        SOAP = file.read().strip()
+    test_results = """
+    DEMO TEST RESULTS SUMMARIZED HERE
+    """
     output_filename = "DD_output.txt"
 
     # Generate the differential diagnosis
     generate_DD(
-        patient_symptoms=patient_symptoms,
-        patient_history=patient_history,
-        physical_examination=physical_examination,
-        test_results=test_results,
-        verbose=True,
-        save_to_file=output_filename
+        SOAP = SOAP,
+        test_results = test_results,
+        verbose = True,
+        save_to_file = output_filename
     )
