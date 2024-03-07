@@ -99,7 +99,7 @@ def record_session():
 
 
 # record new session
-@app.route('/submit_session', methods=['POST'])
+@app.route('/submit_session', methods=['GET', 'POST'])
 @login_required
 def submit_session():
     """

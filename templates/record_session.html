@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Audio Recorder</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='record_session.css') }}"
+    />
+  </head>
+  <body>
+    <button id="startBtn">Start</button>
+    <button id="stopBtn" disabled>Stop</button>
+    <script src="{{ url_for('static', filename='record_session.js') }}"></script>
+  </body>
+</html>
