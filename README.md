@@ -1,14 +1,3 @@
-# Medcare
-
-
-# Testing login creds
-
-- username: 'user'
-- password: 'password'
-
-
-
-
 # Medcare: Revolutionizing Medical Diagnosis with AI
 
 ## 🚀 Overview
@@ -47,7 +36,7 @@ Beyond offering a band-aid for healthcare inefficiencies, Medcare delves deep to
 
 ## 👥 Team
 
-- **Saksham Goel & Madhav Kumar**: Pioneers at the intersection of technology and healthcare, driven by a vision to make a tangible impact on global health challenges.
+- **[Saksham Goel](https://www.linkedin.com/in/saksham-goel-a84355212?originalSubdomain=in) & [Madhav Kumar](https://twitter.com/5mknc5)**: Pioneers at the intersection of technology and healthcare, driven by a vision to make a tangible impact on global health challenges.
 
 ### Thank You! 🌟
 
