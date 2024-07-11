@@ -1,0 +1,45 @@
+**Subjective (S):**
+
+- **Chief Complaint (CC):** Chest pain with tightness and shortness of breath.
+- **History of Present Illness (HPI):** The symptoms started yesterday when the patient was walking up a flight of stairs. Symptoms lasted about 20-30 minutes but recurred with light activity around the house today. The patient also experienced palpitations and lightheadedness but did not faint.
+- **Review of Systems (ROS):** Positive for chest pain, palpitations, and lightheadedness. Negative for syncope.
+- **Past Medical History (PMH):** Diabetes, Hypertension.
+- **Family History (FH):** Great-great-great-grandfather had heart disease.
+- **Social History (SH):** Non-compliant with diabetic diet, observed consuming excessive fast food.
+- **Medications:** Metformin (irregular adherence).
+- **Allergies:** No known drug allergies.
+
+**Objective (O):** [Not provided in the conversation]
+
+**Assessment (A):**
+
+- **Diagnoses or Problems:**
+  1. Chest pain - Possible unstable angina or myocardial infarction given risk factors and presentation.
+  2. Poorly controlled diabetes.
+  3. Hypertension.
+  4. Non-compliance with medication and dietary recommendations.
+
+**Plan (P):**
+
+- **Medications Prescribed:**
+  - Continue Metformin 500 mg twice daily.
+  - Discuss initiation of insulin therapy.
+
+- **Therapies or Procedures Ordered:**
+  - Immediate EKG and echocardiogram.
+  - Blood tests: CBC, Basic Metabolic Panel, Troponin level.
+
+- **Patient Instructions:**
+  - Strict adherence to medication regimen.
+  - Attend scheduled diagnostic tests this afternoon.
+  - Await nurse's call on Friday to discuss insulin therapy.
+  - Follow up with a low-salt vegan diabetic diet as recommended by the nutritionist.
+
+- **Follow-up Information:**
+  - Review test results and adjust treatment plan accordingly.
+  - Nutritionist to call next week for dietary management.
+  - Social worker involvement to ensure access to medications.
+
+- **Referrals to Specialists:**
+  - Nutritionist for dietary management.
+  - Social worker for medication access support.

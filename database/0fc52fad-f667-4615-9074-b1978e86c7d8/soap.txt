@@ -1,0 +1,33 @@
+**Subjective (S):**
+
+- **Chief Complaint (CC):** Patient reports a sensation described as a "sudden heart stroke in my leg."
+
+- **History of Present Illness (HPI):** The patient has experienced this sensation from birth, indicating a congenital condition. No specific onset of symptoms was noted recently.
+
+- **Review of Systems (ROS):** Not provided in detail.
+
+- **Past Medical History (PMH):** Diagnosed with a congenital condition at birth, specifics not provided.
+
+- **Family History (FH):** Not provided.
+
+- **Social History (SH):** Not provided.
+
+- **Medications:** Not provided.
+
+- **Allergies:** Not provided.
+
+**Assessment (A):**
+
+- **Diagnoses or Problems:** Given the limited information, a precise diagnosis cannot be made without further evaluation. The description of a "sudden heart stroke in my leg" is unclear and may require clarification and additional diagnostic workup to understand the underlying condition fully.
+
+**Plan (P):**
+
+- **Medications Prescribed:** None prescribed at this time pending further evaluation.
+
+- **Therapies or Procedures Ordered:** Recommend comprehensive cardiovascular evaluation including echocardiogram and peripheral vascular studies to assess for congenital heart disease or peripheral vascular anomalies.
+
+- **Patient Instructions:** Patient is advised to monitor symptoms and report any changes or worsening of the condition.
+
+- **Follow-up Information:** Schedule a follow-up appointment in 2 weeks or sooner if symptoms worsen.
+
+- **Referrals to Specialists:** Referral to a cardiologist for further evaluation and management of the congenital condition suspected.

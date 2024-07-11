@@ -1,0 +1,8 @@
+[
+    {"role": "doctor", "message": "Hello, how can I assist you today?"},
+    {"role": "patient", "message": "I just had a heart attack. How can you help me? Is there any cure for my disease?"},
+    {"role": "doctor", "message": "I'm sorry to hear that. Can you please describe what you were feeling?"},
+    {"role": "patient", "message": "I was feeling a sudden heart stroke in my leg. Can you please cure my disease?"},
+    {"role": "doctor", "message": "When did the symptoms start?"},
+    {"role": "patient", "message": "I have no idea. This is from birth. I was diagnosed at birth."}
+]
